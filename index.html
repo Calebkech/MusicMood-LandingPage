@@ -1,187 +1,173 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: hsla(221, 45%, 73%, 1);
-    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicMood</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="MusicMood Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-header .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    <br>
+    <br>
+    <main>
+        <section class="intro">
+            <img src="./images/cover.png" alt="Cover Image" class="cover-image">
+            <div class="intro-text">
+                <h1>MusicMood</h1>
+                <p>Discover your next favorite song based on your mood!.</p>
+                <a href="#" class="btn btn-primary">Try It Now</a>
+            </div>
+        </section>
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <img src="./images/user-authentication.png" alt="User Authentication" class="feature-image img-fluid">
+                    <h3>User Authentication</h3>
+                    <p>Secure and easy login to personalize your experience.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <img src="./images/playlist-management.png" alt="Playlist Management" class="feature-image img-fluid">
+                    <h3>Playlist Management</h3>
+                    <p>Create, edit, and manage your playlists with ease.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <img src="./images/mood-recommendations.png" alt="Mood-Based Recommendations" class="feature-image img-fluid">
+                    <h3>Mood-Based Recommendations</h3>
+                    <p>Get song recommendations based on your current mood.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About MusicMood</h2>
+            <p>MusicMood was inspired by a deep passion for music and the desire to enhance the listening experience for everyone. The idea came about when I realized how powerful music can be in influencing and reflecting our emotions. I wanted to create a platform that could understand and respond to our moods, providing the perfect soundtrack for every moment.</p>
+            <p>This project began as a personal endeavor but quickly evolved into a collaborative effort. Our team has worked tirelessly to develop a system that leverages advanced algorithms to offer personalized music recommendations based on your current mood. This project is also a Portfolio Project for Holberton School, demonstrating our skills and dedication to creating innovative solutions.</p>
+            <h3></h3>
+            <a href="https://github.com/musicmood" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                <i class="fab fa-github"></i> Project Repository
+            </a>
+        </section>
+        <section id="team" class="about">
+            <div class="container">
+                <h2>Meet The Team</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 team-member text-center">
+                        <img src="https://via.placeholder.com/150" alt="Caleb Kech" class="img-fluid rounded-circle mb-3">
+                        <h4>Caleb Kech</h4>
+                        <div class="social-media mt-4">
+                            <a href="https://linkedin.com/in/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://twitter.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-member text-center">
+                        <img src="https://via.placeholder.com/150" alt="Aymane Montassir" class="img-fluid rounded-circle mb-3">
+                        <h4>Aymane Montassir</h4>
+                        <div class="social-media mt-4">
+                            <a href="https://linkedin.com/in/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://twitter.com/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="progress" class="about">
+            <div class="container">
+                <h2>Project Progress</h2>
+                <p>We have made significant progress in integrating the backend and frontend, completing user authentication, and initial playlist management. Our mood-based recommendation system is partially implemented.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div class="social-media mt-4">
+                    <h3>Follow us on:</h3>
+                    <a href="https://github.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://twitter.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://facebook.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://linkedin.com/in/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-3">
+    <p>&copy; 2024 MusicMood. All rights reserved.</p>
+</footer>
 
-header .navbar-brand .logo {
-    height: 40px;
-}
-
-.intro {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-    padding-top: 56px; /* Adjust based on header height */
-}
-
-.intro .cover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.intro-text {
-    position: relative;
-    z-index: 2;
-    padding: 2em;
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0.3); /* Keep a slight background for better text visibility */
-}
-
-.intro-text h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.intro-text p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-.intro-text .btn {
-    margin-top: 1em;
-    padding: 0.75em 1.5em;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.intro-text .btn:hover {
-    background: #0056b3;
-}
-
-section {
-    padding: 4em 2em;
-    background: rgba(255, 255, 255, 0.9);
-    margin: 3em auto;
-    max-width: 1200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    color: #5151E5;
-}
-
-section p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 1em;
-}
-
-section .container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.feature {
-    margin-bottom: 2em;
-}
-
-.feature img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 1em;
-}
-
-.feature h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.feature p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.team-member {
-    margin-bottom: 2em;
-    text-align: center;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1em;
-}
-
-.team-member h4 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.team-member .social-media {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.team-member .social-icon {
-    font-size: 1.5em;
-    margin: 0.5em;
-    color: #5151E5;
-    transition: transform 0.3s ease;
-}
-
-.team-member .social-icon:hover {
-    transform: scale(1.2);
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact .form-group label {
-    font-weight: bold;
-}
-
-.contact .btn-social {
-    margin: 0.5em;
-}
-
-footer {
-    background: #fff;
-    border-top: 1px solid #e6e6e6;
-    text-align: center;
-    padding: 1em 0;
-    color: #333;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
