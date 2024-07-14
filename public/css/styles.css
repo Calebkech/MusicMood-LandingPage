@@ -32,6 +32,7 @@ header .navbar-brand .logo {
     color: white;
     overflow: hidden;
     padding-top: 80px; /* Adjust based on header height */
+    background: none; /* Ensure no background color for intro section */
 }
 
 .intro .cover-image {
@@ -70,6 +71,7 @@ header .navbar-brand .logo {
 .intro-text p {
     font-size: 1.5em;
     margin: 0.5em 0;
+    color: whitesmoke;
 }
 
 .intro-text .btn {
