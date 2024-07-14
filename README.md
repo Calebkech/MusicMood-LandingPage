@@ -35,8 +35,11 @@ This is a simple landing page for MusicMood, a mood-based music recommendation s
 npm start
 ```
 
-The server will be running on [http://localhost:3000](http://localhost:3000).
-[MusicMood](https://calebkech.github.io/MusicMood-LandingPage/#) - already hosted page
+- The server will be running on [http://localhost:3000](http://localhost:3000).
+
+or
+
+- [MusicMood](https://calebkech.github.io/MusicMood-LandingPage/#) - already hosted page.
 
 ## Built With
 
