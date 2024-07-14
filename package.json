@@ -2,13 +2,23 @@
     "name": "musicmood-landingpage",
     "version": "1.0.0",
     "description": "Landing page for MusicMood",
-    "main": "app.js",
+    "main": "server.js",
     "scripts": {
-      "start": "node app.js"
+      "start": "node server.js",
+      "deploy": "gh-pages -d public"
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Calebkech/MusicMood-LandingPage.git"
+    },
+    "author": "Caleb Kech",
+    "license": "MIT",
     "dependencies": {
-      "ejs": "^3.1.6",
-      "express": "^4.17.1"
+      "express": "^4.17.1",
+      "ejs": "^3.1.6"
+    },
+    "devDependencies": {
+      "gh-pages": "^3.2.3"
     }
   }
   
