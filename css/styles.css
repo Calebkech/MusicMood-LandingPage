@@ -29,7 +29,7 @@ header .navbar-brand .logo {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    
     overflow: hidden;
     padding-top: 56px; /* Adjust based on header height */
 }
