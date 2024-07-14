@@ -10,6 +10,14 @@ body {
     color: #333;
 }
 
+header .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 header .navbar-brand .logo {
     height: 40px;
 }
@@ -23,6 +31,7 @@ header .navbar-brand .logo {
     text-align: center;
     color: white;
     overflow: hidden;
+    padding-top: 56px; /* Adjust based on header height */
 }
 
 .intro .cover-image {
