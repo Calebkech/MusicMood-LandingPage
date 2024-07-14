@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header .navbar-brand .logo {
+    height: 40px;
+}
+
+.intro {
+    position: relative;
+    height: 100vh;
+    background: url('/images/cover.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.intro-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.intro-text .btn {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.intro-text .btn:hover {
+    background: #0056b3;
+}
+
+.features, .about, .progress, .contact {
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.features h2, .about h2, .progress h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #5151E5;
+}
+
+.features .row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features .feature {
+    flex: 1;
+    margin: 1em;
+    text-align: center;
+}
+
+.features .feature img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.features h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.features p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about {
+    background: #f9f9f9;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.about h2 {
+    color: #5151E5;
+}
+
+.about p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.team .team-member {
+    flex: 1;
+    margin: 1em;
+    max-width: 200px;
+    text-align: center;
+}
+
+.team .team-member h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.team .social-icon {
+    font-size: 1.5em;
+    margin: 0 0.25em;
+    color: #5151E5;
+    transition: transform 0.3s ease;
+}
+
+.team .social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 1em 0;
+    color: #333;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.progress h2 {
+    color: #5151E5;
+}
+
+.progress p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.contact {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #5151E5;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group label {
+    font-weight: bold;
+}
+
+.contact .btn-social {
+    margin: 0.5em;
+}
