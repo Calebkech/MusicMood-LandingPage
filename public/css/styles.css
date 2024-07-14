@@ -1,8 +1,12 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
     color: #333;
 }
 
@@ -46,6 +50,7 @@ header .navbar-brand .logo {
 .intro-text p {
     font-size: 1.5em;
     margin: 0.5em 0;
+    color: white;
 }
 
 .intro-text .btn {
@@ -62,135 +67,95 @@ header .navbar-brand .logo {
     background: #0056b3;
 }
 
-.features, .about, .progress, .contact {
-    max-width: 1200px;
+section {
+    padding: 4em 2em;
+    background: rgba(255, 255, 255, 0.9);
     margin: 3em auto;
-    padding: 2em;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.features h2, .about h2, .progress h2, .contact h2 {
+section h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
     color: #5151E5;
 }
 
-.features .row {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+section p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1em;
 }
 
-.features .feature {
-    flex: 1;
-    margin: 1em;
-    text-align: center;
+section .container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.features .feature img {
+.feature {
+    margin-bottom: 2em;
+}
+
+.feature img {
     width: 100%;
     max-width: 150px;
     height: auto;
     margin-bottom: 1em;
 }
 
-.features h3 {
+.feature h3 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 0.5em;
 }
 
-.features p {
+.feature p {
     color: #666;
     font-size: 1.2em;
     line-height: 1.6;
 }
 
-.about {
-    background: #f9f9f9;
-    padding: 4em 2em;
+.team-member {
+    margin-bottom: 2em;
     text-align: center;
 }
 
-.about h2 {
-    color: #5151E5;
-}
-
-.about p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 1em;
 }
 
-.team {
+.team-member h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.team-member .social-media {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2em;
+    gap: 10px;
 }
 
-.team .team-member {
-    flex: 1;
-    margin: 1em;
-    max-width: 200px;
-    text-align: center;
-}
-
-.team .team-member h4 {
+.team-member .social-icon {
     font-size: 1.5em;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-.team .social-icon {
-    font-size: 1.5em;
-    margin: 0 0.25em;
+    margin: 0.5em;
     color: #5151E5;
     transition: transform 0.3s ease;
 }
 
-.team .social-icon:hover {
+.team-member .social-icon:hover {
     transform: scale(1.2);
 }
 
-footer {
-    background: #fff;
-    border-top: 1px solid #e6e6e6;
-    text-align: center;
-    padding: 1em 0;
-    color: #333;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.progress {
-    padding: 4em 2em;
-    text-align: center;
-}
-
-.progress h2 {
-    color: #5151E5;
-}
-
-.progress p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.contact {
-    padding: 4em 2em;
-    text-align: center;
-}
-
-.contact h2 {
-    color: #5151E5;
-}
-
-.contact .container {
+.contact form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -201,4 +166,13 @@ footer {
 
 .contact .btn-social {
     margin: 0.5em;
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 1em 0;
+    color: #333;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }

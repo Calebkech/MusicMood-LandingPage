@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <%- include('../partials/header') %>
@@ -16,8 +22,8 @@
             <div class="intro-overlay"></div>
             <div class="intro-text">
                 <h1>MusicMood</h1>
-                <p>Your personalized mood-based music recommendation system.</p>
-                <a href="https://deployed-project-url.com" class="btn btn-primary">Try It Now</a>
+                <p>Discover your next favorite song based on your mood!.</p>
+                <a href="#" class="btn btn-primary">Try It Now</a>
             </div>
         </section>
         <section id="features" class="features">
@@ -44,37 +50,49 @@
             <h2>About MusicMood</h2>
             <p>MusicMood was inspired by a deep passion for music and the desire to enhance the listening experience for everyone. The idea came about when I realized how powerful music can be in influencing and reflecting our emotions. I wanted to create a platform that could understand and respond to our moods, providing the perfect soundtrack for every moment.</p>
             <p>This project began as a personal endeavor but quickly evolved into a collaborative effort. Our team has worked tirelessly to develop a system that leverages advanced algorithms to offer personalized music recommendations based on your current mood. This project is also a Portfolio Project for Holberton School, demonstrating our skills and dedication to creating innovative solutions.</p>
-            <h3>Meet the Team</h3>
-            <div class="row team">
-                <div class="col-md-6 team-member">
-                    <h4>Caleb Kech</h4>
-                    <a href="https://linkedin.com/in/calebkech" target="_blank">
-                        <i class="fab fa-linkedin social-icon"></i>
-                    </a>
-                    <a href="https://github.com/calebkech" target="_blank">
-                        <i class="fab fa-github social-icon"></i>
-                    </a>
-                    <a href="https://twitter.com/calebkech" target="_blank">
-                        <i class="fab fa-twitter social-icon"></i>
-                    </a>
-                </div>
-                <div class="col-md-6 team-member">
-                    <h4>Aymane Montassir</h4>
-                    <a href="https://linkedin.com/in/hcktune" target="_blank">
-                        <i class="fab fa-linkedin social-icon"></i>
-                    </a>
-                    <a href="https://github.com/hcktune" target="_blank">
-                        <i class="fab fa-github social-icon"></i>
-                    </a>
-                    <a href="https://twitter.com/hcktune" target="_blank">
-                        <i class="fab fa-twitter social-icon"></i>
-                    </a>
+            <h3></h3>
+            <a href="https://github.com/musicmood" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                <i class="fab fa-github"></i> Project Repository
+            </a>
+        </section>
+        <section id="team" class="about">
+            <div class="container">
+                <h2>Meet The Team</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 team-member text-center">
+                        <img src="https://via.placeholder.com/150" alt="Caleb Kech" class="img-fluid rounded-circle mb-3">
+                        <h4>Caleb Kech</h4>
+                        <div class="social-media mt-4">
+                            <a href="https://linkedin.com/in/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://twitter.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-member text-center">
+                        <img src="https://via.placeholder.com/150" alt="Aymane Montassir" class="img-fluid rounded-circle mb-3">
+                        <h4>Aymane Montassir</h4>
+                        <div class="social-media mt-4">
+                            <a href="https://linkedin.com/in/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://twitter.com/hcktune" target="_blank" class="btn btn-outline-dark btn-social mx-2">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h3>Project Repository</h3>
-            <a href="https://github.com/yourrepository" target="_blank">GitHub Repository</a>
         </section>
-        <section class="about">
+        <section id="progress" class="about">
             <div class="container">
                 <h2>Project Progress</h2>
                 <p>We have made significant progress in integrating the backend and frontend, completing user authentication, and initial playlist management. Our mood-based recommendation system is partially implemented.</p>
@@ -100,16 +118,16 @@
                 </form>
                 <div class="social-media mt-4">
                     <h3>Follow us on:</h3>
-                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline-dark btn-social">
+                    <a href="https://github.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://twitter.com/yourusername" target="_blank" class="btn btn-outline-dark btn-social">
+                    <a href="https://twitter.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
                         <i class="fab fa-twitter"></i> Twitter
                     </a>
-                    <a href="https://facebook.com/yourusername" target="_blank" class="btn btn-outline-dark btn-social">
+                    <a href="https://facebook.com/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
                         <i class="fab fa-facebook"></i> Facebook
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn btn-outline-dark btn-social">
+                    <a href="https://linkedin.com/in/calebkech" target="_blank" class="btn btn-outline-dark btn-social">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
