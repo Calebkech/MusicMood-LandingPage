@@ -82,7 +82,7 @@ header .navbar-brand .logo {
 
 section {
     padding: 4em 2em;
-    
+    background: rgba(255, 255, 255, 0.9);
     margin: 3em auto;
     max-width: 1200px;
     border-radius: 8px;
