@@ -31,7 +31,7 @@ header .navbar-brand .logo {
     text-align: center;
     color: white;
     overflow: hidden;
-    padding-top: 56px; /* Adjust based on header height */
+    padding-top: 80px; /* Adjust based on header height */
 }
 
 .intro .cover-image {
@@ -44,16 +44,11 @@ header .navbar-brand .logo {
     z-index: -1;
 }
 
-.intro-overlay {
-    display: none; /* Remove the overlay */
-}
-
 .intro-text {
     position: relative;
     z-index: 2;
     padding: 2em;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.5); /* Keep a slight background for better text visibility */
 }
 
 .intro-text h1 {
