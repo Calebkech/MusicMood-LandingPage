@@ -17,12 +17,22 @@ header .navbar-brand .logo {
 .intro {
     position: relative;
     height: 100vh;
-    background: url('/images/cover.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    overflow: hidden;
+}
+
+.intro .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .intro-overlay {
@@ -40,6 +50,7 @@ header .navbar-brand .logo {
     z-index: 2;
     padding: 2em;
     border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .intro-text h1 {
@@ -50,7 +61,6 @@ header .navbar-brand .logo {
 .intro-text p {
     font-size: 1.5em;
     margin: 0.5em 0;
-    color: white;
 }
 
 .intro-text .btn {
