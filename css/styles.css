@@ -44,16 +44,12 @@ header .navbar-brand .logo {
     z-index: -1;
 }
 
-.intro-overlay {
-    display: none; /* Remove the overlay */
-}
-
 .intro-text {
     position: relative;
     z-index: 2;
     padding: 2em;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.5); /* Keep a slight background for better text visibility */
+    background: rgba(0, 0, 0, 0.3); /* Keep a slight background for better text visibility */
 }
 
 .intro-text h1 {
