@@ -45,7 +45,7 @@ header .navbar-brand .logo {
 }
 
 .intro-overlay {
-    display: none; /* Remove the overlay */
+    display: #5656; /* Remove the overlay */
 }
 
 .intro-text {
